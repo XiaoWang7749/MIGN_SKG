@@ -6,8 +6,8 @@ Step 1: Download the original data from https://www.ncbi.nlm.nih.gov/. Save data
 Step 2: Run Mutual_lnformation\MI_Calculator.m in Matlab, then you will get the mutual information of genes in the corresponding dataset. If the dataset has N genes, then you will get N x N matrix as the result, where the element of the matrix in the Ath row and the Bth column is the mutual information between gene A and gene B (See “Mutual_Information\MI_Results”).
 
 Remark 1: In the "Mutual_lnformation\MI_Calculator.m", we use the following code to import the Excel file in Step 1:
-
-` A=xlsread('file name(include the path)','the sheet name','a specific rectangular region (range) in Excel to save the p-values of all genes');`
+```matlab  
+A=xlsread('file name(include the path)','the sheet name','a specific rectangular region (range) in Excel to save the p-values of all genes');```
 
 When you run this file, please make the change corresponding to the Excel file you used.
 
