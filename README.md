@@ -1,9 +1,9 @@
 # MIGN_SKG
 Taking brain tumor as an example, we propose a new method, Mutual information gene networks - Structural key genes (MIGN - SKG), to identify key genes for dynamic biological system.
 
-Step 1: Download the original data from https://www.ncbi.nlm.nih.gov/. Save data (gene expressions of samples for the control group and the experimental groups) as Excel files (see “Mutual_Information\Workdatabases”)
+* Step 1: Download the original data from https://www.ncbi.nlm.nih.gov/. Save data (gene expressions of samples for the control group and the experimental groups) as Excel files (see “Mutual_Information\Workdatabases”)
 
-Step 2: Run `Mutual_lnformation\MI_Calculator.m` in Matlab, then you will get the mutual information of genes in the corresponding dataset. If the dataset has N genes, then you will get N x N matrix as the result, where the element of the matrix in the Ath row and the Bth column is the mutual information between gene A and gene B (See “Mutual_Information\MI_Results”).
+* Step 2: Run `Mutual_lnformation\MI_Calculator.m` in Matlab, then you will get the mutual information of genes in the corresponding dataset. If the dataset has N genes, then you will get N x N matrix as the result, where the element of the matrix in the Ath row and the Bth column is the mutual information between gene A and gene B (See “Mutual_Information\MI_Results”).
 
 Remark 1: In the "Mutual_lnformation\MI_Calculator.m", we use the following code to import the Excel file in Step 1:
 ```matlab  
