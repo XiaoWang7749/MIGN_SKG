@@ -7,8 +7,8 @@ Step 2: Run Mutual_lnformation\MI_Calculator.m in Matlab, then you will get the 
 
 Remark 1: In the "Mutual_lnformation\MI_Calculator.m", we use the following code to import the Excel file in Step 1:
 ```matlab  
-A=xlsread('file name(include the path)','the sheet name','a specific rectangular region (range) in Excel to save the p-values of all genes');```
-
+A=xlsread('file name(include the path)','the sheet name','a specific rectangular region (range) in Excel to save the p-values of all genes');
+```
 When you run this file, please make the change corresponding to the Excel file you used.
 
 Remark 2: Other m-files in the folder "Mutual_lnformation" are the files (i.e., subfunctions) needed to successfully run MI_Calculator.m. Specifically, “Discrete_realdata.m” is to discretize the p- values in gene expression profiles. “Entroy_realdata.m” is to calculate the Shannon entropy H (A) for gene A with the discretized p- value. For the original gene expression profiles, you could use “.Entroy.m” is to calculate its Shannon entropy. “Interentroy_realdata.m” (“Interentroy.m”) is to calculate the Mutual Information I (A,B) using H(A) and H(B) obtained by “Entroy_realdata.m” (“Entroy.m”).
